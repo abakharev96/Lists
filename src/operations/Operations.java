@@ -9,7 +9,13 @@ public interface Operations<T> {
 
     void add(T item);
     T get(int index);
-    void remove();
-    void addAll();
-    void optimizeSize();
+    void remove(int index);
+    void addAll(T[] items);
+    Object[] increaseSize(Object[] array, int newLength);
+    Object[] reduceSize(Object[] array, int newLength);
+    boolean isEmpty(T item);
+    int findLastElement(Object[] array);
+    int getSize();
+    int getElementsCount();
+    void clear();
 }
